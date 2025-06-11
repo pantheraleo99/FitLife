@@ -13,6 +13,8 @@ const Navbar = () => (
       <li><Link to="/tips">Fitness Tips</Link></li>
       <li><Link to="/bmi">BMI Calculator</Link></li>
       <li><Link to="/quiz">Quiz</Link></li>
+      <li><Link to="/trainers">Trainers</Link></li>
+
     </ul>
   </nav>
 );

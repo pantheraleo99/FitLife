@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FitnessQuiz from './FitnessQuiz';import { Link } from 'react-router-dom';
 import './FitnessHome.css'; // Make sure this file exists and is linked
 import Testimonials from './Testimonials'; // Already imported
+import Trainers from './Trainers';
 
 
 const FitnessHome = () => {
@@ -42,6 +43,45 @@ const FitnessHome = () => {
       </section>
 
 
+{/* Trainers + Video Section */}
+<section className="trainer-video-section">
+  <h2 >💪 Meet Our Trainers & Try a Quick Workout</h2>
+  <div className="trainer-video-grid">
+
+    {/* Left - Trainers */}
+    <div className="trainers-list">
+      <div className="trainer-card">
+        <img src="https://cbx-prod.b-cdn.net/COLOURBOX61711484.jpg?height=800&quality=70&width=800" alt="Alex Johnson" />
+        <h3>Alex Johnson</h3>
+        <p><strong>Strength & Conditioning</strong></p>
+        <p>Helping clients get strong & stay motivated for 8+ years.</p>
+      </div>
+      <div className="trainer-card">
+        <img src="https://i.pinimg.com/736x/4e/80/73/4e80730544b3b3d9d94332b96be2f486.jpg" alt="Maria Lopez" />
+        <h3>Maria Lopez</h3>
+        <p><strong>Yoga & Flexibility</strong></p>
+        <p>Specialist in mobility, posture & mental relaxation training.</p>
+      </div>
+    </div>
+
+    {/* Right - Video */}
+    <div className="video-box">
+      <div className="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/UBMk30rjy0o"
+          title="5 Minute Full Body Workout"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <p>🔥 Follow this energizing 5-minute fitness blast!</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+{/* 
       <section className="video-highlight">
         <h2>Quick 5‑Minute Workout</h2>
         <div className="video-container">
@@ -56,6 +96,8 @@ const FitnessHome = () => {
           ></iframe>
         </div>
       </section>
+
+      <Trainers/> */}
 
       {/* CTA Section */}
       <section className="cta">
