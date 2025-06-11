@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
 import FitnessTips from './components/FitnessTips';
 import FitnessQuiz from './components/FitnessQuiz';
+import Trainers from './components/Trainers';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/tips" element={<FitnessTips />} />
         <Route path="/quiz" element={<FitnessQuiz />} />
+        <Route path="/trainers" element={<Trainers />} />
+
 
         <Route path="*" element={<h2 style={{ textAlign: 'center' }}>404 - Page Not Found</h2>} />
       </Routes>
