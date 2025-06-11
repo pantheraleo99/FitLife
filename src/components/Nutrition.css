@@ -1,0 +1,28 @@
+.nutrition-container {
+  padding: 2rem;
+  text-align: center;
+  background: #fefce8;
+}
+
+.nutrition-container h2 {
+  font-size: 2rem;
+  color: #1c1917;
+  margin-bottom: 1rem;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #374151;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tips-list li {
+  margin: 1rem 0;
+  background: #fff7ed;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
