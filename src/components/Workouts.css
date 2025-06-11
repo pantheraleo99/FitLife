@@ -1,13 +1,15 @@
 .workouts-container {
-  padding: 2rem;
-  background-color: #f9fafb;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #f0f4f8, #f9fafb);
   text-align: center;
 }
 
 .workouts-container h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #1f2937;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #1e293b;
+  letter-spacing: 0.5px;
 }
 
 .workout-grid {
@@ -18,21 +20,37 @@
 }
 
 .workout-card {
-  background-color: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.5rem;
-  width: 280px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.workout-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .workout-card h3 {
+  font-size: 1.4rem;
   color: #0f172a;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .workout-card ul {
   padding-left: 1rem;
-  color: #374151;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  list-style-type: disc;
+}
+
+.workout-card ul li {
+  margin-bottom: 0.5rem;
 }
